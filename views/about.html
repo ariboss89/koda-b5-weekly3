@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Pages" />
+    <link rel="stylesheet" href="../style/about.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <input type="checkbox" id="myCheckbox1" hidden />
+        <label class="toggle burger" for="myCheckbox1"
+          ><img
+            src="https://www.svgrepo.com/show/506800/burger-menu.svg"
+            width="30vh"
+            height="30vh"
+          />
+        </label>
+        <label class="close" for="myCheckbox1"
+          ><img
+            src="../icons/image.png"
+            alt="icon close"
+            width="30vh"
+            height="30vh"
+          />
+        </label>
+
+        <nav class="nav">
+          <div style="margin-right: auto">
+            <a style="text-decoration: none; color: black" href="/index.html"
+              >Ari Ramadhan</a
+            >
+          </div>
+          <div style="margin-right: 20px">
+            <a style="text-decoration: none; color: black" href="about.html"
+              >About</a
+            >
+          </div>
+          <div style="margin-right: 20px">
+            <a style="text-decoration: none; color: black" href="/index.html"
+              >Projects</a
+            >
+          </div>
+          <div>
+            <a style="text-decoration: none; color: black" href="#contact"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <div class="main">
+        <div class="item">
+          <h2>About me</h2>
+          <p style="text-align: justify">
+            I have 3 years experience as professional in fullstack development
+            using .NET Technology, Currently taking certification for mastering
+            javascript and go programming language
+          </p>
+
+          <button class="btn" id="btnResume">Resume</button>
+        </div>
+        <div class="item">
+          <div class="round-img">
+            <img
+              class="round-img"
+              src="/icons/arri.png"
+              width="400vh"
+              height="400vh"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-form">
+        <h1 class="item-form">Projects</h1>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          padding: 10px;
+          justify-content: center;
+        "
+      >
+        <form class="fill-form">
+          <label style="margin-bottom: 10px" for="txtName">Name</label>
+          <input
+            style="margin-bottom: 10px"
+            type="text"
+            id="txtName"
+            name="txtName"
+          />
+
+          <label style="margin-bottom: 10px" for="txtEmail">Email</label>
+          <input
+            style="margin-bottom: 10px"
+            type="text"
+            id="txtEmail"
+            name="txtEmail"
+          />
+
+          <label style="margin-bottom: 10px" for="txtName">Message</label>
+          <textarea
+            style="margin-bottom: 10px"
+            type="txtMsg"
+            id="txtMsg"
+            name="txtMsg"
+            rows="5"
+          ></textarea>
+
+          <div
+            style="display: flex; flex-direction: row; justify-content: right"
+          >
+            <input
+              id="btnSend"
+              class="btn"
+              style="margin-bottom: 10px"
+              type="submit"
+              value="Send"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div class="footer">
+        <img
+          class="item-footer"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png"
+          width="50vh"
+        />
+        <img
+          class="item-footer"
+          src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png"
+          width="50vh"
+        />
+        <img
+          class="item-footer"
+          src="https://www.citypng.com/public/uploads/preview/download-letter-email-round-black-icon-png-701751695034643iva2oosqqc.png"
+          width="50vh"
+        />
+      </div>
+      <div class="bg-footer">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 1440 344"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 258L60 229.333C120 200.667 240 143.333 360 150.5C480 157.667 600 229.333 720 229.333C840 229.333 960 157.667 1080 107.5C1200 57.3333 1320 28.6667 1380 14.3333L1440 0V344H1380C1320 344 1200 344 1080 344C960 344 840 344 720 344C600 344 480 344 360 344C240 344 120 344 60 344H0V258Z"
+            fill="#6ac5fe"
+          />
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>
