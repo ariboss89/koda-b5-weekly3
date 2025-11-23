@@ -53,8 +53,8 @@ body {
   border-top-left-radius: 360px;
   border-bottom-left-radius: 360px;
   border-bottom-right-radius: 360px;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   background-color: #6ac5fe;
 }
 
@@ -144,6 +144,16 @@ body {
     display: flex;
     flex-direction: row;
     padding: 20px;
+  }
+
+  .round-img {
+    border-top-right-radius: 360px;
+    border-top-left-radius: 360px;
+    border-bottom-left-radius: 360px;
+    border-bottom-right-radius: 360px;
+    width: 400px;
+    height: 400px;
+    background-color: #6ac5fe;
   }
 }
 
