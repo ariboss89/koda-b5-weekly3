@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header style="position: absolute; top: 0; width: 100%">
       <input type="checkbox" id="myCheckbox1" hidden />
       <label class="toggle burger" for="myCheckbox1"
         ><img
@@ -47,35 +47,45 @@
           >
         </div>
       </nav>
-      <svg
-        class="img-right"
-        width="650"
-        height="100%"
-        viewBox="0 -20 620 720"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M426.755 -247.339C526.01 -242.623 630.416 -205.737 691.019 -128.942C747.053 -57.9359 709.403 42.8884 725.408 131.114C738.276 202.044 786.302 264.961 775.404 336.204C763.332 415.132 724.842 490.453 662.532 542.186C597.271 596.368 510.835 641.895 426.755 625.671C345.261 609.947 319.875 506.823 250.249 462.635C174.069 414.287 41.2528 440.785 6.43092 358.913C-27.6816 278.71 83.9568 208.257 106.308 124.209C131.067 31.1084 79.6084 -81.3667 143.094 -154.976C208.865 -231.236 324.689 -252.189 426.755 -247.339Z"
-          fill="#6ac5fe"
-        />
-        <image
-          class="mask1"
-          href="/icons/arri.png"
-          x="201"
-          y="155"
-          width="500"
-          height="500"
-        />
-      </svg>
     </header>
 
     <main>
-      <div class="main">
-        <div class="main-item">
-          <p>FULLSTACK DEVELOPER</p>
+      <div class="img-right">
+        <svg
+          width="590"
+          height="620"
+          viewBox="0 0 720 629"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <clipPath id="blobShape">
+              <path
+                d="M426.755 -247.339C526.01 -242.623 630.416 -205.737 691.019 -128.942C747.053 -57.9359 709.403 42.8884 725.408 131.114C738.276 202.044 786.302 264.961 775.404 336.204C763.332 415.132 724.842 490.453 662.532 542.186C597.271 596.368 510.835 641.895 426.755 625.671C345.261 609.947 319.875 506.823 250.249 462.635C174.069 414.287 41.2528 440.785 6.43092 358.913C-27.6816 278.71 83.9568 208.257 106.308 124.209C131.067 31.1084 79.6084 -81.3667 143.094 -154.976C208.865 -231.236 324.689 -252.189 426.755 -247.339Z"
+              />
+            </clipPath>
+          </defs>
+          <path
+            d="M426.755 -247.339C526.01 -242.623 630.416 -205.737 691.019 -128.942C747.053 -57.9359 709.403 42.8884 725.408 131.114C738.276 202.044 786.302 264.961 775.404 336.204C763.332 415.132 724.842 490.453 662.532 542.186C597.271 596.368 510.835 641.895 426.755 625.671C345.261 609.947 319.875 506.823 250.249 462.635C174.069 414.287 41.2528 440.785 6.43092 358.913C-27.6816 278.71 83.9568 208.257 106.308 124.209C131.067 31.1084 79.6084 -81.3667 143.094 -154.976C208.865 -231.236 324.689 -252.189 426.755 -247.339Z"
+            fill="#6ac5fe"
+          />
+          <image
+            href="icons/arri.png"
+            width="400"
+            height="1000"
+            x="250"
+            y="-150"
+            clip-path="url(#blobShape)"
+          />
+        </svg>
+      </div>
+      <div class="hero">
+        <div class="hero-item">
+          <p
+            style="font-size: 24; text-shadow: 2px 1px #000000; color: #6ac5fe"
+          >
+            FULLSTACK DEVELOPER
+          </p>
           <h1
             style="
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
@@ -111,91 +121,171 @@
       </div>
 
       <section id="project">
-        <h1 class="item-head">PROJECTS</h1>
+        <p class="item-head">PROJECTS</p>
         <div class="main-box">
-          <div class="box-grid">
-            <div class="item">
-              <p class="heading">SCHEDULER OF BIRDS</p>
-              <p>
-                This app has feature alarm to notify user that has saved their
-                birds schedule such as time to feed, time to bath or time to
-                sunbath the birds
-              </p>
-              <button class="btn" style="width: 100px" id="btnView">
-                View Project
-              </button>
-            </div>
-            <div class="item">
-              <img
-                class="box-img"
-                src="icons/jadwal-burung.png"
-                width="80%"
-                height="100%"
-              />
-            </div>
+          <div class="item">
+            <p class="heading">SCHEDULER OF BIRDS</p>
+            <p>
+              This app has feature alarm to notify user that has saved their
+              birds schedule such as time to feed, time to bath or time to
+              sunbath the birds
+            </p>
+            <button class="btn" style="width: 100px" id="btnView">
+              View Project
+            </button>
           </div>
 
-          <div class="box-grid-even">
-            <div class="item-even">
-              <img
-                class="box-img-left"
-                src="icons/electre.png"
-                width="80%"
-                height="100%"
-              />
-            </div>
-            <div class="item-even">
-              <p class="heading">DSS ELECTRE METHOD</p>
-              <p>
-                This apps has a feature to take decision of location based on
-                criteria and the data using electre methods
-              </p>
-              <button class="btn" style="width: 100px" id="btnView">
-                View Project
-              </button>
-            </div>
+          <img
+            class="item"
+            src="icons/jadwal-burung.png"
+            width="100%"
+            height="540px"
+          />
+        </div>
+
+        <div class="main-box">
+          <img
+            class="even"
+            src="icons/electre.png"
+            width="100%"
+            height="540px"
+          />
+
+          <div class="even">
+            <p class="heading">DSS ELECTRE METHOD</p>
+            <p>
+              This apps has a feature to take decision of location based on
+              criteria and the data using electre methods
+            </p>
+            <button class="btn" style="width: 100px" id="btnView">
+              View Project
+            </button>
+          </div>
+        </div>
+
+        <div class="main-box">
+          <div class="item">
+            <p class="heading">PDAM TIRTA CRUD APPLICATION</p>
+            <p>
+              This web has a function to handle sales proccess for PDAM TIRTA
+              Tanjung Uban
+            </p>
+            <button class="btn" style="width: 100px" id="btnView">
+              View Project
+            </button>
           </div>
 
-          <div class="box-grid">
-            <div class="item">
-              <p class="heading">PDAM TIRTA CRUD APPLICATION</p>
-              <p>
-                This web has a function to handle sales proccess for PDAM TIRTA
-                Tanjung Uban
-              </p>
-              <button class="btn" style="width: 100px" id="btnView">
-                View Project
-              </button>
-            </div>
-            <div class="item">
-              <img
-                class="box-img"
-                src="icons/tirtaKepri.png"
-                width="80%"
-                height="100%"
+          <img
+            class="item"
+            src="icons/tirtaKepri.png"
+            width="100%"
+            height="540px"
+          />
+        </div>
+      </section>
+
+      <section>
+        <div class="main-form">
+          <p id="txtHeading" class="heading">Projects</p>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            padding: 10px;
+            justify-content: center;
+          "
+        >
+          <form class="fill-form">
+            <label
+              style="
+                margin-bottom: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+              for="txtName"
+              >Name</label
+            >
+            <input
+              style="margin-bottom: 10px"
+              type="text"
+              id="txtName"
+              name="txtName"
+            />
+
+            <label
+              style="
+                margin-bottom: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+              for="txtEmail"
+              >Email</label
+            >
+            <input
+              style="margin-bottom: 10px"
+              type="text"
+              id="txtEmail"
+              name="txtEmail"
+            />
+
+            <label
+              style="
+                margin-bottom: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+              for="txtName"
+              >Message</label
+            >
+            <textarea
+              style="margin-bottom: 10px"
+              type="txtMsg"
+              id="txtMsg"
+              name="txtMsg"
+              rows="5"
+            ></textarea>
+
+            <div
+              style="display: flex; flex-direction: row; justify-content: right"
+            >
+              <input
+                id="btnSend"
+                class="btn"
+                style="
+                  margin-bottom: 10px;
+                  font-family: Arial, Helvetica, sans-serif;
+                "
+                type="submit"
+                value="Send"
               />
             </div>
-          </div>
+          </form>
         </div>
       </section>
     </main>
     <footer>
       <div id="contact" class="footer">
-        <img
-          class="item-footer"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png"
-          width="50vh"
-        />
-        <img
-          class="item-footer"
-          src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png"
-          width="50vh"
-        />
-        <img
-          class="item-footer"
-          src="https://www.citypng.com/public/uploads/preview/download-letter-email-round-black-icon-png-701751695034643iva2oosqqc.png"
-          width="50vh"
-        />
+        <div id="divIg">
+          <img
+            class="img-footer"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png"
+            width="50vh"
+          />
+        </div>
+        <div id="divLinkedIn">
+          <img
+            class="img-footer"
+            src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png"
+            width="50vh"
+          />
+        </div>
+        <div id="divMail">
+          <img
+            class="img-footer"
+            src="https://www.citypng.com/public/uploads/preview/download-letter-email-round-black-icon-png-701751695034643iva2oosqqc.png"
+            width="50vh"
+          />
+        </div>
       </div>
       <div class="bg-footer">
         <svg
