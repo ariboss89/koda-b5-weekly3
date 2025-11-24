@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="About Pages" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style/about.css" />
     <title>About</title>
   </head>
@@ -83,7 +87,9 @@
         "
       >
         <form class="fill-form">
-          <label style="margin-bottom: 10px" for="txtName">Name</label>
+          <label style="margin-bottom: 10px; font-family: Nunito" for="txtName"
+            >Name</label
+          >
           <input
             style="margin-bottom: 10px"
             type="text"
@@ -91,7 +97,9 @@
             name="txtName"
           />
 
-          <label style="margin-bottom: 10px" for="txtEmail">Email</label>
+          <label style="margin-bottom: 10px; font-family: Nunito" for="txtEmail"
+            >Email</label
+          >
           <input
             style="margin-bottom: 10px"
             type="text"
@@ -99,7 +107,9 @@
             name="txtEmail"
           />
 
-          <label style="margin-bottom: 10px" for="txtName">Message</label>
+          <label style="margin-bottom: 10px; font-family: Nunito" for="txtName"
+            >Message</label
+          >
           <textarea
             style="margin-bottom: 10px"
             type="txtMsg"
@@ -114,7 +124,7 @@
             <input
               id="btnSend"
               class="btn"
-              style="margin-bottom: 10px"
+              style="margin-bottom: 10px; font-family: Nunito"
               type="submit"
               value="Send"
             />
@@ -123,23 +133,29 @@
       </div>
     </main>
 
-    <footer id="contact">
-      <div class="footer">
-        <img
-          class="item-footer"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png"
-          width="50vh"
-        />
-        <img
-          class="item-footer"
-          src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png"
-          width="50vh"
-        />
-        <img
-          class="item-footer"
-          src="https://www.citypng.com/public/uploads/preview/download-letter-email-round-black-icon-png-701751695034643iva2oosqqc.png"
-          width="50vh"
-        />
+    <footer>
+      <div id="contact" class="footer">
+        <div id="divIg">
+          <img
+            class="img-footer"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CIS-A2K_Instagram_Icon_%28Black%29.svg/2048px-CIS-A2K_Instagram_Icon_%28Black%29.svg.png"
+            width="50vh"
+          />
+        </div>
+        <div id="divLinkedIn">
+          <img
+            class="img-footer"
+            src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png"
+            width="50vh"
+          />
+        </div>
+        <div id="divMail">
+          <img
+            class="img-footer"
+            src="https://www.citypng.com/public/uploads/preview/download-letter-email-round-black-icon-png-701751695034643iva2oosqqc.png"
+            width="50vh"
+          />
+        </div>
       </div>
       <div class="bg-footer">
         <svg
@@ -155,6 +171,8 @@
             d="M0 258L60 229.333C120 200.667 240 143.333 360 150.5C480 157.667 600 229.333 720 229.333C840 229.333 960 157.667 1080 107.5C1200 57.3333 1320 28.6667 1380 14.3333L1440 0V344H1380C1320 344 1200 344 1080 344C960 344 840 344 720 344C600 344 480 344 360 344C240 344 120 344 60 344H0V258Z"
             fill="#6ac5fe"
           />
+
+          <a href="/views/about.html"></a>
         </svg>
       </div>
     </footer>
