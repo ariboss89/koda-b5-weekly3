@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-size: 20px;
   background-color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito";
+  font-size: 24px;
 }
 
 .burger {
@@ -30,7 +31,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   padding: 30px;
-  font-family: "Courier New", Courier, monospace;
   justify-items: center;
   align-items: center;
 
@@ -99,6 +99,27 @@ body {
   margin-bottom: 30px;
 }
 
+.img-footer {
+  opacity: 1;
+  display: block;
+  width: 10vh;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+#divIg:hover .img-footer {
+  opacity: 0.3;
+}
+
+#divLinkedIn:hover .img-footer {
+  opacity: 0.3;
+}
+
+#divMail:hover .img-footer {
+  opacity: 0.3;
+}
+
 .bg-footer {
   display: grid;
   grid-template-rows: 1fr;
@@ -112,7 +133,7 @@ body {
     grid-template-rows: 2fr;
     height: 500px;
     padding: 30px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Nunito";
     justify-items: center;
     align-items: center;
 
